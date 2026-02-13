@@ -1,13 +1,26 @@
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 
 export default function ToDo() {
   const [todos, setTodos] = useState([]);
-  const [input, setInput] = useState("");
+  const { register, handleSubmit, reset } = useForm({
+    defaultValues: {
+      todoInput: "",
+    },
+  });
 
-  const addTodo = () => {
-    if (input.trim()) {
-      setTodos([...todos, { id: Date.now(), text: input, completed: false }]);
-      setInput("");
+  const onSubmit = (data) => {
+    console.log("Form Data:", data);
+
+    if (data.todoInput.trim()) {
+      const newTodo = {
+        id: Date.now(),
+        text: data.todoInput,
+        completed: false,
+      };
+      console.log("Adding Todo:", newTodo);
+      setTodos([...todos, newTodo]);
+      reset();
     }
   };
 
@@ -17,9 +30,11 @@ export default function ToDo() {
         todo.id === id ? { ...todo, completed: !todo.completed } : todo,
       ),
     );
+    console.log("Todo toggled, ID:", id);
   };
 
   const deleteTodo = (id) => {
+    console.log("Deleting Todo, ID:", id);
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
@@ -27,22 +42,23 @@ export default function ToDo() {
     <div style={{ padding: "20px", maxWidth: "500px", margin: "20px auto" }}>
       <h1>ToDo List</h1>
 
-      <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        style={{ display: "flex", gap: "10px", marginBottom: "20px" }}
+      >
         <input
           type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          onKeyPress={(e) => e.key === "Enter" && addTodo()}
+          {...register("todoInput")}
           placeholder="Add a new todo..."
           style={{ flex: 1, padding: "8px", fontSize: "16px" }}
         />
         <button
-          onClick={addTodo}
+          type="submit"
           style={{ padding: "8px 16px", cursor: "pointer" }}
         >
           Add
         </button>
-      </div>
+      </form>
 
       <ul style={{ listStyle: "none", padding: 0 }}>
         {todos.map((todo) => (
