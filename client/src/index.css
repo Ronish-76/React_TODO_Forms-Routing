@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .navbar {
   display: flex;
   align-items: center;
@@ -59,4 +63,3 @@
 .btn-signup:hover {
   background: #333;
 }
-  
