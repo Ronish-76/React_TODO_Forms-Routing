@@ -72,7 +72,7 @@ export default function AddTodo() {
                 value={formData.title}
                 onChange={handleChange}
                 placeholder="Enter task title"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                 autoFocus
               />
             </div>
@@ -92,7 +92,7 @@ export default function AddTodo() {
                 onChange={handleChange}
                 placeholder="Add task details..."
                 rows="4"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none"
               ></textarea>
             </div>
 
@@ -109,7 +109,7 @@ export default function AddTodo() {
                 name="priority"
                 value={formData.priority}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
               >
                 <option value="Low">Low</option>
                 <option value="Medium">Medium</option>
@@ -128,14 +128,14 @@ export default function AddTodo() {
             <div className="flex gap-4 pt-4">
               <button
                 type="submit"
-                className="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                className="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold"
               >
                 Create Task
               </button>
               <button
                 type="button"
                 onClick={() => navigate("/todo")}
-                className="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-400 transition-colors"
+                className="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg font-semibold"
               >
                 Cancel
               </button>

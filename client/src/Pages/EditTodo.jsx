@@ -76,7 +76,7 @@ export default function EditTodo() {
             <p className="text-red-600 mb-4">{error}</p>
             <button
               onClick={() => navigate("/todo")}
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg"
             >
               Back to Todo
             </button>
@@ -113,7 +113,7 @@ export default function EditTodo() {
                 value={formData.title}
                 onChange={handleChange}
                 placeholder="Enter task title"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                 autoFocus
               />
             </div>
@@ -133,7 +133,7 @@ export default function EditTodo() {
                 onChange={handleChange}
                 placeholder="Add task details..."
                 rows="4"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none"
               ></textarea>
             </div>
 
@@ -150,7 +150,7 @@ export default function EditTodo() {
                 name="priority"
                 value={formData.priority}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
               >
                 <option value="Low">Low</option>
                 <option value="Medium">Medium</option>
@@ -169,14 +169,14 @@ export default function EditTodo() {
             <div className="flex gap-4 pt-4">
               <button
                 type="submit"
-                className="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                className="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold"
               >
                 Update Task
               </button>
               <button
                 type="button"
                 onClick={() => navigate("/todo")}
-                className="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg font-semibold hover:bg-gray-400 transition-colors"
+                className="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg font-semibold"
               >
                 Cancel
               </button>

@@ -40,7 +40,7 @@ export default function TodoItem({ todo, onToggle, onDelete }) {
       className={`flex items-start gap-4 p-4 border-l-4 rounded-lg transition-all ${
         todo.completed
           ? "bg-gray-50 border-gray-300"
-          : "bg-white border-blue-500 hover:shadow-md"
+          : "bg-white border-blue-500"
       }`}
     >
       {/* Checkbox */}
@@ -48,7 +48,7 @@ export default function TodoItem({ todo, onToggle, onDelete }) {
         type="checkbox"
         checked={todo.completed}
         onChange={() => onToggle(todo.id)}
-        className="mt-1 w-5 h-5 cursor-pointer accent-blue-600"
+        className="mt-1 w-5 h-5 cursor-pointer"
       />
 
       {/* Todo Content */}
@@ -87,13 +87,13 @@ export default function TodoItem({ todo, onToggle, onDelete }) {
       <div className="flex gap-2">
         <Link
           to={`/edit/${todo.id}`}
-          className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors text-sm font-medium"
+          className="px-3 py-1 bg-blue-500 text-white rounded text-sm font-medium"
         >
           Edit
         </Link>
         <button
           onClick={() => onDelete(todo.id)}
-          className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition-colors text-sm font-medium"
+          className="px-3 py-1 bg-red-500 text-white rounded text-sm font-medium"
         >
           Delete
         </button>

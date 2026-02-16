@@ -146,7 +146,7 @@ export default function ToDo() {
                 placeholder="Search tasks by title or description..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
               />
             </div>
 
@@ -155,7 +155,7 @@ export default function ToDo() {
               <select
                 value={filter}
                 onChange={(e) => setFilter(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
               >
                 <option value="All">All Tasks</option>
                 <option value="Active">Active Tasks</option>
@@ -168,13 +168,13 @@ export default function ToDo() {
           <div className="mt-4 flex gap-4 flex-wrap">
             <button
               onClick={handleExport}
-              className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium"
+              className="px-4 py-2 bg-green-500 text-white rounded-lg text-sm font-medium"
             >
               📥 Export Tasks
             </button>
             <button
               onClick={handleImportClick}
-              className="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-sm font-medium"
+              className="px-4 py-2 bg-purple-500 text-white rounded-lg text-sm font-medium"
             >
               📤 Import Tasks
             </button>

@@ -7,14 +7,12 @@ import { Link } from "react-router-dom";
  */
 export default function Header() {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg">
+    <div className="bg-gradient-to-r from-blue-500 to-blue-600 shadow-lg">
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-3xl font-bold mb-2">My Tasks</h1>
-            <p className="text-blue-100">
-              Organize your day, one task at a time
-            </p>
+            <h1 className="text-3xl font-bold mb-2 text-black">My Tasks</h1>
+            <p className="text-black">Organize your day, one task at a time</p>
           </div>
           <Link
             to="/add"

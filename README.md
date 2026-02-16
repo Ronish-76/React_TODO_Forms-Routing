@@ -19,19 +19,22 @@ Visit **`http://localhost:5173/todo`** to start managing tasks!
 ## ✅ Requirements Fulfillment
 
 ### 1. Core Features (5/5)
+
 - ✅ **Add To-Do Items** - Create tasks with title and optional description
-- ✅ **Edit To-Do Items** - Update task titles and descriptions  
+- ✅ **Edit To-Do Items** - Update task titles and descriptions
 - ✅ **Delete To-Do Items** - Remove tasks individually
 - ✅ **Mark as Completed** - Toggle tasks between completed and pending
 - ✅ **Filter & Search** - Filter by status (All/Active/Completed) + search by title/description
 
 ### 2. State Management
+
 - ✅ **React Hooks** - Uses `useState` and `useEffect`
 - ✅ **Logical Structure** - Tasks stored with title, description, priority, timestamps
 - ✅ **LocalStorage** - All state automatically persisted to browser
 - ✅ **Reusable Components** - Utility functions for centralized state management
 
 ### 3. Routing with React Router v6
+
 - ✅ `/todo` - Main todo list with filters & search
 - ✅ `/add` - Create new task page
 - ✅ `/edit/:id` - Edit specific task by ID
@@ -39,6 +42,7 @@ Visit **`http://localhost:5173/todo`** to start managing tasks!
 - ✅ Direct URL access works for all routes
 
 ### 4. Project Structure
+
 ```
 client/src
 ├── Components/
@@ -62,17 +66,20 @@ client/src
 ```
 
 ### 5. Data Persistence
+
 - ✅ **localStorage** - All tasks automatically saved & restored
 - ✅ **Export/Import** - Download tasks as JSON, import them back (bonus)
 - ✅ **No Data Loss** - Tasks persist across page reloads
 
 ### 6. Styling & UI
+
 - ✅ **Tailwind CSS** - Modern, responsive design framework
 - ✅ **Visual Differentiation** - Completed tasks show strikethrough
 - ✅ **Responsive Design** - Mobile, tablet, and desktop support
 - ✅ **Intuitive Navigation** - Clear header with "Add Task" button
 
 ### 7. Bonus Features ✨
+
 - ✅ **Task Priority** - High/Medium/Low with color coding
 - ✅ **Export/Import** - Download/upload tasks as JSON files
 - ✅ **Dashboard Stats** - Total, completed, and active task counts
@@ -84,30 +91,33 @@ client/src
 
 ## 📦 Tech Stack
 
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| **React** | 19+ | UI framework |
-| **Vite** | 7+ | Build tool & dev server |
-| **React Router** | v6 | Client-side routing |
-| **Tailwind CSS** | 4+ | Responsive styling |
-| **React Hook Form** | 7+ | Form management |
-| **PostCSS** | 8+ | CSS processing |
-| **Autoprefixer** | 10+ | CSS vendor prefixes |
+| Technology          | Version | Purpose                 |
+| ------------------- | ------- | ----------------------- |
+| **React**           | 19+     | UI framework            |
+| **Vite**            | 7+      | Build tool & dev server |
+| **React Router**    | v6      | Client-side routing     |
+| **Tailwind CSS**    | 4+      | Responsive styling      |
+| **React Hook Form** | 7+      | Form management         |
+| **PostCSS**         | 8+      | CSS processing          |
+| **Autoprefixer**    | 10+     | CSS vendor prefixes     |
 
 ---
 
 ## 🔧 Installation & Setup
 
 ### Prerequisites
+
 - Node.js v16 or higher
 - npm v7 or higher
 
 ### Step 1: Navigate to Client Directory
+
 ```bash
 cd client
 ```
 
 ### Step 2: Install Dependencies
+
 ```bash
 npm install
 ```
@@ -115,6 +125,7 @@ npm install
 Installs: React, React DOM, React Router, React Hook Form, Tailwind CSS, PostCSS, Autoprefixer
 
 ### Step 3: Start Development Server
+
 ```bash
 npm run dev
 ```
@@ -124,6 +135,7 @@ App runs at **`http://localhost:5173/`** (Vite will assign different port if 517
 > **Navigate to:** `http://localhost:5173/todo`
 
 ### Step 4: Build for Production
+
 ```bash
 npm run build
 ```
@@ -131,6 +143,7 @@ npm run build
 Creates optimized production build in `dist/` folder
 
 ### Step 5: Preview Production Build
+
 ```bash
 npm run preview
 ```
@@ -141,21 +154,22 @@ Tests the production build locally
 
 ## 📍 Routes Overview
 
-| Route | Component | Description |
-|-------|-----------|-------------|
-| `/` | Home | Home page |
-| `/todo` | ToDo | **Main task list with filters & search** |
-| `/add` | AddTodo | **Create new task form** |
-| `/edit/:id` | EditTodo | **Edit specific task** |
-| `/completed` | CompletedTodos | **View completed tasks** |
-| `/counter` | CounterApp | Counter demo |
-| `/login` | Login | Login page |
+| Route        | Component      | Description                              |
+| ------------ | -------------- | ---------------------------------------- |
+| `/`          | Home           | Home page                                |
+| `/todo`      | ToDo           | **Main task list with filters & search** |
+| `/add`       | AddTodo        | **Create new task form**                 |
+| `/edit/:id`  | EditTodo       | **Edit specific task**                   |
+| `/completed` | CompletedTodos | **View completed tasks**                 |
+| `/counter`   | CounterApp     | Counter demo                             |
+| `/login`     | Login          | Login page                               |
 
 ---
 
 ## 📚 How to Use
 
 ### Add a Task
+
 1. Click **"+ Add Task"** button in the header
 2. Enter task title (required)
 3. Add optional description and priority
@@ -163,30 +177,36 @@ Tests the production build locally
 5. Task appears immediately in the main list
 
 ### Edit a Task
+
 1. Find the task in the list
 2. Click the **"Edit"** button
 3. Update title, description, or priority
 4. Click **"Update Task"**
 
 ### Mark Task as Complete
+
 1. Check the checkbox next to any task
 2. Task shows strikethrough and grays out
 3. Status updates automatically
 
 ### Delete a Task
+
 1. Click **"Delete"** button next to the task
 2. Task is removed immediately
 3. Changes save to localStorage automatically
 
 ### Filter Tasks
+
 1. Use the **Filter dropdown** (All Tasks / Active Tasks / Completed Tasks)
 2. View updates in real-time
 
 ### Search Tasks
+
 1. Type in the **Search box** at the top
 2. Results filter by task title and description instantly
 
 ### Export/Import Tasks
+
 1. **Export**: Click "📥 Export Tasks" → downloads as JSON file
 2. **Import**: Click "📤 Import Tasks" → select a JSON file to import
 
@@ -195,24 +215,29 @@ Tests the production build locally
 ## 🏗️ Component Architecture
 
 ### Header.jsx
+
 - Displays "My Tasks" title
 - Shows "Add Task" button linking to `/add`
 - Responsive gradient background
 
 ### TodoItem.jsx
+
 - Reusable component for individual tasks
 - Shows title, description, priority badge
 - Includes checkbox, Edit, Delete buttons
 - Visual priority color coding (High=red, Medium=yellow, Low=green)
 
 ### TodoList.jsx
+
 - Container component accepting todo array
 - Maps todos to TodoItem components
 - Handles empty state messaging
 - Accepts callbacks for toggle and delete
 
 ### Utils/storage.js
+
 All localStorage operations centralized:
+
 - `getTodos()` - Retrieve all tasks
 - `addTodo(todo)` - Create new task
 - `updateTodo(id, data)` - Update existing task
@@ -227,6 +252,7 @@ All localStorage operations centralized:
 ## 📊 State Structure
 
 Each todo object contains:
+
 ```javascript
 {
   id: 1707912345000,              // Unique timestamp-based ID
@@ -243,15 +269,18 @@ Each todo object contains:
 ## 💾 Data Storage
 
 ### localStorage Key
+
 Tasks are stored under: **`courseManagement_todos`**
 
 ### Manual Clear (Browser Console)
+
 ```javascript
 localStorage.removeItem("courseManagement_todos");
 location.reload();
 ```
 
 ### View in DevTools
+
 - Open DevTools → Application tab → LocalStorage
 - Look for key: `courseManagement_todos`
 
@@ -260,6 +289,7 @@ location.reload();
 ## 💻 Code Examples
 
 ### Adding a Task
+
 ```javascript
 import { addTodo } from "../utils/storage";
 
@@ -273,6 +303,7 @@ const updatedTodos = addTodo(formData);
 ```
 
 ### Filtering Tasks
+
 ```javascript
 const filteredTodos = todos.filter((todo) => {
   if (filter === "Active" && todo.completed) return false;
@@ -294,17 +325,21 @@ const filteredTodos = todos.filter((todo) => {
 ## 🎨 Features in Action
 
 ### Dashboard Statistics
+
 - **Total Tasks** - Count of all tasks
 - **Completed** - Count of finished tasks
 - **Active** - Count of pending tasks
 
 ### Priority System
+
 - 🔴 **High** - Red badge
-- 🟡 **Medium** - Yellow badge  
+- 🟡 **Medium** - Yellow badge
 - 🟢 **Low** - Green badge
 
 ### Responsive Design
+
 On mobile (< 768px):
+
 - Navbar becomes compact
 - Stats grid stacks vertically
 - Controls stack vertically
@@ -325,20 +360,24 @@ On mobile (< 768px):
 ## 🔍 Troubleshooting
 
 ### Todos not persisting?
+
 - ✓ Check browser localStorage is enabled
 - ✓ Open DevTools → Application tab → LocalStorage
 - ✓ Verify key is `courseManagement_todos`
 
 ### Edit page shows "Todo not found"?
+
 - ✓ URL ID might be incorrect
 - ✓ Try accessing from the main list
 
 ### Form not submitting?
+
 - ✓ Check browser console for errors
 - ✓ Ensure title field is filled (required)
 - ✓ Verify Tailwind CSS is loaded (check DevTools styles)
 
 ### Dev server not starting?
+
 - ✓ Ensure you're in the `client` directory
 - ✓ Run `npm install` again
 - ✓ Check if port 5173 is already in use
@@ -368,12 +407,14 @@ npm run preview  # Preview production build locally
 ## 📝 Developer Notes
 
 ### Adding New Features
+
 1. **New Routes**: Add to `Routes/AppRoute.jsx`
 2. **New Pages**: Create in `Pages/` folder
 3. **New Components**: Create in `Components/` folder
 4. **localStorage Changes**: Update `utils/storage.js`
 
 ### Code Quality Standards
+
 - ✅ Well-commented throughout
 - ✅ Follows React best practices
 - ✅ Reusable, modular components
